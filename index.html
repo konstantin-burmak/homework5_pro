@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homework5</title>
+    <body>
+        <script>
+            function padString(name, stringCount, symbol, toStart) {
+                let symbAcc = '';
+                let symbCount = stringCount - name.length;
+
+                for (let i = 0; i < symbCount; i++) {
+                    symbAcc += symbol;
+                }
+
+                if (toStart == true) {
+                        return symbAcc + name;
+                    } else {
+                        return name + symbAcc;
+                    }
+            }
+
+            const result = padString('Kostia', 10, '!', false);
+            console.log(result);
+        </script>
+    </body>
+</head>
